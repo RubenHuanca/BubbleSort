@@ -18,9 +18,9 @@ void printV(vector<int> v){ // v: Passing by Value
 }
 
 void bubbleSort(vector<int> &v, int n){ // v: Pass by Reference
-    for(int i=0; i<n; i++){
+    for(int i=0; i<n-1; i++){
         for(int j=0; j<n-1-i; j++){
-            if(v[j] >= v[j+1]){
+            if(v[j] > v[j+1]){
                 int temp = v[j+1];
                 v[j+1] = v[j];
                 v[j] = temp;
